@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Piedra Papel Tijera</title>
+
+</head>
+<body>
+	
+
+   <script type="text/javascript">
+    
+   function maquina(minimo, maximo)
+{
+    var numero = Math.floor( Math.random() * (maximo - minimo + 1) + minimo );
+    return numero;
+}
+
+
+
+
+   var piedra=0;
+   var papel =1;
+   var tijera = 2;
+
+   var usuario;
+   var pc = maquina(0,2);
+
+   usuario = prompt("eliga la opcion");
+   
+
+   if(usuario == piedra){
+       
+       alert("elegistes piedra");
+       if(pc == piedra){
+
+
+          alert("empate");
+       }
+       else if(pc == papel){
+
+
+          alert("pierdes");
+       }
+
+       else if(pc == tijera){
+
+
+          alert("ganastes");
+       }
+   }
+
+   else if(usuario == papel){
+       
+       alert("eligistes papel");
+        if(pc == papel){
+
+
+          alert("empate");
+       }
+       else if(pc == tijera){
+
+
+          alert("pierdes");
+       }
+
+       else if(pc == piedra){
+
+
+          alert("ganastes");
+       }
+ 
+   }
+   
+   else if(usuario == tijera){
+       
+       alert("eligistes tijera");
+        if(pc == tijera){
+
+
+          alert("empate");
+       }
+       else if(pc == piedra){
+
+
+          alert("pierdes");
+       }
+
+       else if(pc == papel){
+
+
+          alert("ganastes");
+       }
+ 
+
+   }
+
+   else {
+
+      alert("escoga una opcion: entre 0 , 1 , 2");
+   }
+  
+
+
+   </script>
+
+     
+
+
+</body>
+</html>
