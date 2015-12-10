@@ -1,2 +1,2 @@
-# Ruby
-Programming with ruby
+# Ruby , javascript , python
+Programming cool
